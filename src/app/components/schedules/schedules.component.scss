@@ -1,0 +1,13 @@
+.schedule-title{
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .schedule-list{
+    display: grid;
+  }
+}
+@media (max-width: 1024px) {
+  .schedule-list{
+    display: flex;
+  }
+}

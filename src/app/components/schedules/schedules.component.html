@@ -1,0 +1,8 @@
+<h2 class="text-center underline schedule-title">Horarios</h2>
+@for(schedule of schedules; track schedule){
+  <div class="schedule-list md:grid-cols-2 flex-col items-center my-2">
+    <p class="text-lg font-medium">{{schedule.day}}</p>
+    <p class="text-lg">{{schedule.schedule}}</p>
+  </div>
+  <hr>
+}
