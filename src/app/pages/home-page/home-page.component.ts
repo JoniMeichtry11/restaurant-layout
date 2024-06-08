@@ -7,8 +7,8 @@ import {
   ContactComponent,
   SchedulesComponent,
   GalleryComponent,
+  WelcomeComponent,
 } from '../../components';
-import { WelcomeComponent } from '../../components/welcome/welcome.component';
 
 @Component({
   selector: 'app-home-page',
