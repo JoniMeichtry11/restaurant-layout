@@ -6,3 +6,4 @@ export * from './contact/contact.component';
 export * from './schedules/schedules.component';
 export * from './gallery/gallery.component';
 export * from './welcome/welcome.component';
+export * from './sobre-nosotros/sobre-nosotros.component';

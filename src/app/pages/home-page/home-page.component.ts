@@ -8,6 +8,7 @@ import {
   SchedulesComponent,
   GalleryComponent,
   WelcomeComponent,
+  SobreNosotrosComponent,
 } from '../../components';
 
 @Component({
@@ -17,6 +18,7 @@ import {
     NavbarComponent,
     WelcomeComponent,
     MainComponent,
+    SobreNosotrosComponent,
     MapsComponent,
     ContactComponent,
     SchedulesComponent,
