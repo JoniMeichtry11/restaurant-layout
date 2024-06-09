@@ -25,7 +25,7 @@
     ],
     "paths": {
       "@core/*": [
-        "./src/app/core*"
+        "./src/app/core/*"
       ],
       "@assets/*": [
         "./src/assets/*"
