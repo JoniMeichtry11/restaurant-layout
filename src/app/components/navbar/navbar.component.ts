@@ -21,10 +21,11 @@ export class NavbarComponent {
       "Menu",
       "Sobre nosotros",
       "Galeria",
-      "Contacto"
+      "Contacto",
+      "Horarios"
     ],
     tools: {
-      cart: true,
+      cart: false,
       user: true
     }
   }
