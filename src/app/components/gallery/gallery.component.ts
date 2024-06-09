@@ -27,7 +27,7 @@ export class GalleryComponent {
 
   ngOnInit() {
     // Get the galleryRef by id
-    const galleryRef = this.gallery.ref('myGallery');
+    const galleryRef = this.gallery.ref('galeria');
 
     // Or load a new set of items
     galleryRef.load([

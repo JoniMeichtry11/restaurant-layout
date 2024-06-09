@@ -1,13 +1,32 @@
 @if(isSlidingPanelOpen){
-  <div class="fixed left-0 top-0 bottom-0 w-64 bg-black text-white p-4 transform translate-x-0 transition-transform duration-300 ease-in-out z-10">
-    <ul class="navItems">
-      @for(section of sections; track section){
-      <li class="mb-4">
-        <a [href]="'#' + section" (click)="onClosePanelClick()">{{ section }}</a>
-      </li>
-      }
-    </ul>
-  </div>
-  <div (click)="onClosePanelClick()" class="fixed left-0 top-0 bottom-0 w-full bg-gray-200/60 p-4 transform translate-x-0 transition-transform duration-300 ease-in-out">
-  </div>
+<div
+  class="fixed left-0 top-0 bottom-0 w-64 bg-black text-white p-4 transform translate-x-0 transition-transform duration-300 ease-in-out z-10"
+>
+  <ul class="navItems">
+    <li class="mb-4">
+      <a href="/" (click)="onClosePanelClick()">
+        <img src="../../../../assets/img/henry-cook-logo-nav-white.png" alt="logo" class="h-10"/>
+      </a>
+    </li>
+    <li class="mb-4">
+      <a href="/menu" (click)="onClosePanelClick()">Menu</a>
+    </li>
+    <li class="mb-4">
+      <a href="#sobre-nosotros" (click)="onClosePanelClick()">Sobre Nosotros</a>
+    </li>
+    <li class="mb-4">
+      <a href="#galeria" (click)="onClosePanelClick()">Galeria</a>
+    </li>
+    <li class="mb-4">
+      <a href="#contacto" (click)="onClosePanelClick()">Contacto</a>
+    </li>
+    <li class="mb-4">
+      <a href="#horarios" (click)="onClosePanelClick()">Horarios</a>
+    </li>
+  </ul>
+</div>
+<div
+  (click)="onClosePanelClick()"
+  class="fixed left-0 top-0 bottom-0 w-full bg-gray-200/60 p-4 transform translate-x-0 transition-transform duration-300 ease-in-out"
+></div>
 }

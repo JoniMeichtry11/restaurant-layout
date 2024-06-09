@@ -1,39 +1,56 @@
 <nav>
-  <div class="hamburger" (click)="toggleSlidePanel()">
+  <div class="hamburger" (click)="openSlidingPanel()">
     <span
       class="icon-[radix-icons--hamburger-menu]"
       role="img"
       aria-hidden="true"
     ></span>
   </div>
-  <div class="logo">
-    @if(navbarDataList.logo.show){
-    <img [src]="navbarDataList.logo.src" [alt]="navbarDataList.logo.alt" />
-    }
-  </div>
-  <div></div>
-  <ul class="navItems">
-    @for(section of navbarDataList.sections; track section){
-    <li>
-      <a [href]="'#' + section">{{ section }}</a>
-    </li>
-    }
-  </ul>
   <app-sliding-panel
-    [sections]="navbarDataList.sections"
     [isSlidingPanelOpen]="isSlidingPanelOpen"
     (closePanel)="isSlidingPanelOpen = false"
   ></app-sliding-panel>
-  <div class="icon">
-    @if(navbarDataList.tools.cart){
-    <span class="icon-[mdi--cart] mx-2" role="img" aria-hidden="true"></span>
-    } @if(navbarDataList.tools.user){
-    <span
-      class="icon-[ph--user-circle-fill] mx-2"
-      role="img"
-      aria-hidden="true"
-    ></span>
+  <div class="flex justify-between w-full">
+    @if(navbarDataList.logo.show){
+    <div class="logo me-auto">
+      <a href="/">
+        <img
+          [src]="navbarDataList.logo.src"
+          [alt]="navbarDataList.logo.alt"
+          class="h-10"
+        />
+      </a>
+    </div>
     }
+    <ul class="navItems">
+      <li>
+        <a href="/menu">Menu</a>
+      </li>
+      <li>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+      </li>
+      <li>
+        <a href="#galeria">Galeria</a>
+      </li>
+      <li>
+        <a href="#contacto">Contacto</a>
+      </li>
+      <li>
+        <a href="#horarios">Horarios</a>
+      </li>
+    </ul>
+    <div class="icon">
+      @if(navbarDataList.tools.cart){
+      <span class="icon-[mdi--cart] mx-2" role="img" aria-hidden="true"></span>
+      } @if(navbarDataList.tools.user){
+      <div class="icon">
+        <span
+          class="icon-[ph--user-circle-fill] mx-2"
+          role="img"
+          aria-hidden="true"
+        ></span>
+      </div>
+      }
+    </div>
   </div>
 </nav>
-

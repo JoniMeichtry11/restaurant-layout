@@ -66,11 +66,25 @@ nav .hamburger{
   transition: 0.1s;
 }
 
-@media (min-width: 680px) {
+@media (min-width: 1120px) {
   .hamburger{
     display: none;
   }
   .navItems{
     display: flex;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 1120px) {
+  .logo{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

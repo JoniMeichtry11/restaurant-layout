@@ -13,24 +13,19 @@ export class NavbarComponent {
   isSlidingPanelOpen = false;
   navbarDataList: navbarDataListInterface = {
     logo: {
-      src: '',
+      src: '../../../assets/img/henry-cook-logo-nav-black.png',
       alt: '',
-      show: false
+      show: true
     },
-    sections: [
-      "Menu",
-      "Sobre nosotros",
-      "Galeria",
-      "Contacto",
-      "Horarios"
-    ],
     tools: {
       cart: false,
-      user: true
+      user: false
     }
   }
-  toggleSlidePanel(){
-    this.isSlidingPanelOpen = !this.isSlidingPanelOpen
-    console.log(this.isSlidingPanelOpen);
+  closeSlidingPanel(){
+    this.isSlidingPanelOpen = false;
+  }
+  openSlidingPanel(){
+    this.isSlidingPanelOpen = true;
   }
 }

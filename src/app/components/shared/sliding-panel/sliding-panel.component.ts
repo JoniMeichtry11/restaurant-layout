@@ -9,7 +9,6 @@ import { navbarDataListInterface } from '../../../core/models';
   styleUrl: './sliding-panel.component.scss'
 })
 export class SlidingPanelComponent {
-  @Input() sections: string[] = [];
   @Input() isSlidingPanelOpen: boolean = false;
   @Output() closePanel: EventEmitter<void> = new EventEmitter<void>();
 
