@@ -13,7 +13,7 @@ export class NavbarComponent {
   isSlidingPanelOpen = false;
   navbarDataList: navbarDataListInterface = {
     logo: {
-      src: '../../../assets/img/henry-cook-logo-nav-black.png',
+      src: '../../../assets/img/restaurant-logo-principal.png',
       alt: '',
       show: true
     },
